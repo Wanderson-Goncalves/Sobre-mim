@@ -1,0 +1,47 @@
+.sobre-mim p {
+    margin: auto;
+    column-count: 2;
+
+    column-gap: 25.88px;
+}
+.sobre-mim div {
+    display: flex;
+    gap: 16px;
+}
+.sobre-mim img {
+    object-fit: cover;
+    max-height: 450px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-redes-sociais {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 41.87384px;
+}
+
+.whatsapp-button {
+    margin: 25.88px auto;
+}
+.whatsapp-button button {
+    background-color: #2b8900;
+    color: #fff;
+    border-radius: 16px;
+    font-size: 25.88px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    height: 41.87px;
+    width: 464.339px;
+
+    box-shadow: 12px 14px 23px 4px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button button:hover {
+    background-color: #256f00; /* Cor para o estado hover */
+}

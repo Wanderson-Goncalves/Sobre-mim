@@ -1,0 +1,16 @@
+
+.cursos-lista ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25.88px;
+  
+
+}
+
+.cursos-lista li {
+  flex: 1 1 48%;
+  box-sizing: border-box;
+  background-color: #2b8900;
+  padding: 16px;
+  border-radius: 8px;
+}

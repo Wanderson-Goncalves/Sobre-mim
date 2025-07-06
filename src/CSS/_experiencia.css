@@ -1,0 +1,17 @@
+.experiencia-container ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 25.88px;
+}
+
+.experiencia-profissional p {
+    padding: 0 0 25.88px 0;
+}
+.seta {
+    background-color: #2b8900;
+    flex-shrink: 0; /* Impede que a seta encolha */
+    box-shadow: 18px 13px 24px 4px rgba(66, 68, 90, 1);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+    height: 80px;
+    width: 25.88px;
+}

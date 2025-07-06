@@ -1,0 +1,63 @@
+
+
+.formacao-container{
+    display: flex;
+    flex-direction: row;
+    gap: 25.88px;
+
+}
+.formacao-academica{
+    display: flex;
+    flex-direction: column;
+    gap: 25.88px;
+    border: 1px solid #133D00;
+    padding: 16px;
+    width: 50% ;
+    padding: 16px;
+}
+.barras{
+    width: 16px;
+    background-color: #133D00;
+    height: 100%;
+}
+.formacao-ensino p {
+    padding: 16px;
+}
+.ensino-medio,
+.curso-tecnico,
+.ciencia-dados{
+    display: flex;
+    gap: 16px;
+
+}
+.curso-tecnico{
+    padding-left: 16px;
+    margin-bottom: 1px solid #133D00 ;
+}
+.ciencia-dados{
+    padding: 32px;
+}
+.cursos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50% ;
+    text-align: right;
+    background-color: #133D00;
+    padding: 16px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: -13px 12px 38px 9px rgba(0,0,0,0.7);
+
+  
+
+}
+.cursos-container{
+    width: 100%;
+}
+.data-cursos{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: flex-end;
+}

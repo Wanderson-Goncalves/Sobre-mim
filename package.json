@@ -1,0 +1,19 @@
+{
+    "name": "sobre-mim",
+    "version": "1.0.0",
+    "main": "./src/Js/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "Sobre-mim",
+        "Wanderson Gonçalves Moreira",
+        "Portfolio",
+        "JavaScript",
+        "HTML",
+        "CSS"
+    ],
+    "author": "Wanderson Gonçalves Moreira",
+    "license": "ISC",
+    "description": "Portfólio de Wanderson Gonçalves Moreira - Sobre mim"
+}

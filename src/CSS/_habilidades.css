@@ -1,0 +1,100 @@
+
+
+.habilidades h2 {
+    text-align: left;
+    padding: 25.88px;
+}
+
+.minhas-habilidades {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    /* padding-top: 25.88px; */
+}
+
+.minhas-habilidades > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    text-align: center;
+    height: 268px;
+}
+
+.bloco-2,
+.bloco-3,
+.bloco-6,
+.bloco-7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b8900;
+}
+
+.minhas-habilidades img {
+    width: 25.88px;
+    height: 25.88px;
+    display: block;
+    margin: 0 auto;
+}
+
+.bloco-1 p,
+.bloco-5 p {
+    text-align: right;
+}
+.bloco-4 p,
+.bloco-8 p{
+    text-align: left;
+}
+.bloco-2 {
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 0;
+}
+.bloco-3 {
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+.bloco-6 {
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 100%;
+}
+.bloco-7 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+
+
+.habilidades-adiquiridas ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25.88px;
+    padding-top: 25.88px;
+
+}
+.habilidades-adiquiridas li {
+    display: flex;
+    min-width: 115px;
+    justify-content: left;
+    align-items: center;
+
+}
+.habilidades-adiquiridas ul img{
+    width: 25.88px;
+    height: 25.88px;
+    margin-right: 9.88px;
+
+}

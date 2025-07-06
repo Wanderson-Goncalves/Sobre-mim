@@ -1,0 +1,76 @@
+@import url(_reset.css);
+@import url(_header.css);
+@import url(_sobreMim.css);
+@import url(_habilidades.css);
+@import url(_formacao.css);
+@import url(_experiencia.css);
+@import url(_cursos-extracurriculares.css);
+@import url(_cards-meus-projetos.css);
+@import url(_footer.css);
+body {
+    background-image: linear-gradient(
+            310deg,
+            hsl(240, 64%, 27%) 0%,
+            hsl(240, 63%, 26%) 18%,
+            hsl(239, 61%, 26%) 30%,
+            hsl(239, 60%, 25%) 38%,
+            hsl(239, 59%, 24%) 43%,
+            hsl(239, 57%, 24%) 47%,
+            hsl(239, 56%, 23%) 50%,
+            hsl(239, 54%, 22%) 53%,
+            hsl(239, 52%, 22%) 56%,
+            hsl(239, 50%, 21%) 61%,
+            hsl(240, 49%, 20%) 68%,
+            hsl(240, 47%, 25%) 80%,
+            hsl(240, 44%, 19%) 100%
+        );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 100vh;
+    line-height: 25px;
+    margin: 0;
+    text-align: center;
+    padding-top: 41.87384px;
+}
+
+.container {
+    text-align: left;
+    color: blanchedalmond;
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+    padding: 0 16px 41.88px;
+}
+h2 {
+    font-size: 25.88px;
+    font-weight: 700;
+    padding: 25.88px 0;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+h4{
+    padding: 9.88px 0 0 16px;
+    font-weight: 400;
+}
+
+.card-escritorio{
+    background-image: url(../Image/card-escritorio.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    margin: 25.88px 0 41.87px;
+
+}
+
+
+

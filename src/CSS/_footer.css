@@ -1,0 +1,19 @@
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25.88px;
+}
+.footer-content img{
+    width: 100px;
+    height: 100px;
+
+}
+.footer-content nav ul{
+    display: flex;
+
+}
+
+.footer-content nav ul li{
+    padding: 0 41.87px;
+}

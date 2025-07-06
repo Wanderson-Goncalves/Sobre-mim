@@ -1,0 +1,78 @@
+
+.selecao {
+    display: flex;
+    gap: 9.88px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #133d00;
+    border-radius: 25.88px;
+    color: #fff;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card a.button {
+    margin-top: auto;
+    background-color: #2b8900;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card a.button:hover {
+    background-color: #256f00;
+}
+
+.meus-projetos-button {
+  display: flex;
+  justify-content: center;
+  margin: 41.87px auto;
+}
+
+.meus-projetos-button button {
+  background-color: #2b8900;
+  color: #fff;
+  border-radius: 16px;
+  font-size: 25.88px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  height: 41.87px;
+  width: 464.339px;
+  box-shadow: 12px 14px 23px 4px rgba(0, 0, 0, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+.meus-projetos-button button:hover {
+  background-color: #256f00; /* Cor para o estado hover */
+}
+.meus-projetos-button{
+    border-radius: 9.88px;
+    background-color: #256f00;
+    color: #fff;
+}
