@@ -1,18 +1,14 @@
+/* Estilos Gerais para a seção Habilidades (Desktop First) */
 
-
-.habilidades h2 {
-    text-align: left;
-    padding: 25.88px;
-}
 
 .minhas-habilidades {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas para desktop */
     gap: 16px;
     max-width: 1200px;
     margin: 0 auto;
     border-radius: 8px;
-    /* padding-top: 25.88px; */
+    /* padding-top: 25.88px; */ /* Pode ser ajustado */
 }
 
 .minhas-habilidades > div {
@@ -21,16 +17,15 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
-
     text-align: center;
-    height: 268px;
+    height: 268px; /* Altura fixa para desktop */
 }
 
 .bloco-2,
 .bloco-3,
 .bloco-6,
 .bloco-7 {
-    display: flex;
+    display: flex; /* Mantém flex para desktop */
     justify-content: center;
     align-items: center;
     background-color: #2b8900;
@@ -48,9 +43,11 @@
     text-align: right;
 }
 .bloco-4 p,
-.bloco-8 p{
+.bloco-8 p {
     text-align: left;
 }
+
+/* Formas dos blocos (manteremos a lógica, mas o tamanho se adaptará) */
 .bloco-2 {
     border-top-left-radius: 100%;
     border-bottom-left-radius: 100%;
@@ -76,25 +73,106 @@
     border-bottom-right-radius: 100%;
 }
 
-
-
-.habilidades-adiquiridas ul{
+/* Habilidades Adquiridas */
+.habilidades-adiquiridas ul {
     display: flex;
     flex-wrap: wrap;
     gap: 25.88px;
     padding-top: 25.88px;
-
+    justify-content: flex-start;
 }
+
 .habilidades-adiquiridas li {
     display: flex;
     min-width: 115px;
     justify-content: left;
     align-items: center;
-
+    text-align: left;
 }
-.habilidades-adiquiridas ul img{
+
+.habilidades-adiquiridas ul img {
     width: 25.88px;
     height: 25.88px;
     margin-right: 9.88px;
+}
+
+/* --- Media Queries para Dispositivos Menores (Mobile e Tablet) --- */
+
+/* Para telas até 768px (tablets em retrato e todos os celulares) */
+@media (max-width: 768px) {
+    .habilidades h2 {
+        padding: 20px 10px;
+        text-align: left;
+    }
+
+    .minhas-habilidades {
+        display: block; /* 2 colunas para tablets e celulares */
+        gap: 10px;
+        padding: 0 10px;
+
+    }
+    .minhas-habilidades > div {
+        height: 80px; /* Altura reduzida para tablets */
+        padding: 10px;
+    }
+
+
+
+    .bloco-1 p ,
+    .bloco-5 p,
+    .bloco-4 p,
+    .bloco-8 p,
+    .bloco-1 h3,
+    .bloco-5 h3,
+    .bloco-4 h3,
+    .bloco-8 h3 {
+        width: 100%;
+        text-align: left !important; /* Corrigido: !important vem DEPOIS do valor */
+    }
+
+
+    .bloco-2,
+    .bloco-3,
+    .bloco-6,
+    .bloco-7 {
+        display: none !important;
+    }
+
+    .minhas-habilidades img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .habilidades-adiquiridas ul {
+        justify-content: space-around;
+    }
+
+    .habilidades-adiquiridas li {
+        min-width: 100px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .habilidades-adiquiridas ul img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+}
+
+/* Para telas muito pequenas (smartphones em retrato) */
+@media (max-width: 480px) {
+    /* .habilidades h2 {
+        padding: 15px 5px;
+        font-size: 20px;
+    } */
+
+    .minhas-habilidades {
+        grid-template-columns: 1fr; /* Uma única coluna para celulares muito pequenos */
+        gap: 8px;
+        padding: 0 5px;
+    }
+
+
 
 }

@@ -1,32 +1,46 @@
+/* Estilos para a seção Sobre Mim (Desktop First) */
 .sobre-mim p {
     margin: auto;
     column-count: 2;
-
     column-gap: 25.88px;
 }
+
 .sobre-mim div {
     display: flex;
     gap: 16px;
+    align-items: flex-start;
 }
+
 .sobre-mim img {
     object-fit: cover;
     max-height: 450px;
+    width: auto;
 }
 
+/* Estilos para a seção Contato (Desktop First) */
 .contato {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .contato-redes-sociais {
     display: flex;
     justify-content: space-around;
     margin-bottom: 41.87384px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contato-redes-sociais img {
+    max-width: 60px;
+    height: auto;
 }
 
 .whatsapp-button {
     margin: 25.88px auto;
 }
+
 .whatsapp-button button {
     background-color: #2b8900;
     color: #fff;
@@ -37,11 +51,105 @@
     cursor: pointer;
     height: 41.87px;
     width: 464.339px;
-
     box-shadow: 12px 14px 23px 4px rgba(0, 0, 0, 0.7);
     transition: background-color 0.3s ease;
 }
 
 .whatsapp-button button:hover {
-    background-color: #256f00; /* Cor para o estado hover */
+    background-color: #256f00;
+}
+
+/* --- Media Queries para Dispositivos Menores (Mobile e Tablet) --- */
+
+/* Para telas até 768px  */
+@media (max-width: 768px) {
+    .sobre-mim p {
+        column-count: 1;
+        margin: 0;
+    }
+
+    .sobre-mim div {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sobre-mim img {
+        max-height: 250px;
+        max-width: 80%;
+    }
+
+    .contato-redes-sociais {
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+    }
+
+    .contato-redes-sociais img {
+        max-width: 50px;
+    }
+
+    .whatsapp-button {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .whatsapp-button button {
+        
+        max-width: 300px;
+        font-size: 20px;
+        height: 35px;
+    }
+}
+
+/* Para telas muito pequenas (smartphones em retrato) */
+@media (max-width: 480px) {
+    .sobre-mim div {
+        gap: 15px;
+    }
+
+    .sobre-mim img {
+        max-height: 200px;
+        max-width: 90%;
+    }
+
+
+
+    .contato-redes-sociais img {
+        max-width: 40px;
+    }
+
+    .whatsapp-button {
+        margin: 15px auto;
+    }
+
+    .whatsapp-button button {
+        font-size: 18px;
+        height: 30px;
+    }
+}
+
+/* Para Celulares em paisagem (Landscape) - Opcional */
+@media (max-width: 767px) and (orientation: landscape) {
+    .sobre-mim div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .sobre-mim p {
+        column-count: 1;
+        max-width: 60%;
+    }
+    .sobre-mim img {
+        max-height: 200px;
+        max-width: 35%;
+    }
+    .contato-redes-sociais {
+        justify-content: center;
+    }
+    .whatsapp-button button {
+        width: 80%;
+        max-width: 250px;
+    }
 }

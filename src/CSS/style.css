@@ -7,29 +7,29 @@
 @import url(_cursos-extracurriculares.css);
 @import url(_cards-meus-projetos.css);
 @import url(_footer.css);
+/* Estilos Gerais (Desktop First - Base para telas maiores ou padrão) */
 body {
     background-image: linear-gradient(
-            310deg,
-            hsl(240, 64%, 27%) 0%,
-            hsl(240, 63%, 26%) 18%,
-            hsl(239, 61%, 26%) 30%,
-            hsl(239, 60%, 25%) 38%,
-            hsl(239, 59%, 24%) 43%,
-            hsl(239, 57%, 24%) 47%,
-            hsl(239, 56%, 23%) 50%,
-            hsl(239, 54%, 22%) 53%,
-            hsl(239, 52%, 22%) 56%,
-            hsl(239, 50%, 21%) 61%,
-            hsl(240, 49%, 20%) 68%,
-            hsl(240, 47%, 25%) 80%,
-            hsl(240, 44%, 19%) 100%
-        );
+        310deg,
+        hsl(240, 64%, 27%) 0%,
+        hsl(240, 63%, 26%) 18%,
+        hsl(239, 61%, 26%) 30%,
+        hsl(239, 60%, 25%) 38%,
+        hsl(239, 59%, 24%) 43%,
+        hsl(239, 57%, 24%) 47%,
+        hsl(239, 56%, 23%) 50%,
+        hsl(239, 54%, 22%) 53%,
+        hsl(239, 52%, 22%) 56%,
+        hsl(239, 50%, 21%) 61%,
+        hsl(240, 49%, 20%) 68%,
+        hsl(240, 47%, 25%) 80%,
+        hsl(240, 44%, 19%) 100%
+    );
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: block;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     color: #fff;
     font-size: 16px;
     font-weight: 400;
@@ -38,6 +38,7 @@ body {
     margin: 0;
     text-align: center;
     padding-top: 41.87384px;
+    box-sizing: border-box;
 }
 
 .container {
@@ -48,29 +49,117 @@ body {
     margin: auto;
     padding: 0 16px 41.88px;
 }
+
 h2 {
     font-size: 25.88px;
     font-weight: 700;
     padding: 25.88px 0;
+    width: 100%;
 }
+
 h3 {
     font-size: 16px;
     font-weight: 600;
-}
-h4{
-    padding: 9.88px 0 0 16px;
-    font-weight: 400;
+    width: 100%;
 }
 
-.card-escritorio{
+h4 {
+    padding: 9.88px 0 0 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.card-escritorio {
     background-image: url(../Image/card-escritorio.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 250px;
     margin: 25.88px 0 41.87px;
+}
+
+/* --- Media Queries para Dispositivos Menores (Mobile e Tablet) --- */
+
+/* Para telas até 768px */
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 20px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .container {
+        padding: 0 10px 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+        padding: 20px 0;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        padding: 8px 0 0 10px;
+    }
+
+    .card-escritorio {
+        height: 200px;
+        margin: 20px 0 30px;
+    }
+
 
 }
 
+/* Para telas muito pequenas (smartphones em retrato) */
+@media (max-width: 480px) {
+    body {
+        padding-top: 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .container {
+        padding: 0 8px 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        padding: 6px 0 0 8px;
+    }
+
+    .card-escritorio {
+        height: 150px;
+        margin: 15px 0 25px;
+    }
+
+
+}
+
+/* --- Media Queries para Orientação de Tela --- */
+
+/* Para Tablets em paisagem (Landscape) */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/* Para Celulares em paisagem (Landscape) */
+@media (max-width: 767px) and (orientation: landscape) {
+
+    .card-escritorio {
+        height: 180px;
+    }
+}
 
 

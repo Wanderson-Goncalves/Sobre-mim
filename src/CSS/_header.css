@@ -1,4 +1,4 @@
-/* Cabeçalho */
+/* Estilos Gerais para o Cabeçalho (Desktop First) */
 .header {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -24,15 +24,18 @@
     margin-left: 0;
     padding: 16px 0;
 }
+
 .header-resumo h1 {
     font-size: 25.88px;
     font-weight: 700;
 }
+
 .header-contateme {
-    padding: 16 0px;
+    padding: 16px 0;
     display: flex;
     gap: 25.88px;
 }
+
 .header-contateme a {
     text-decoration: underline;
 }
@@ -43,4 +46,97 @@
     height: auto;
     object-fit: cover;
     box-shadow: 4px 8px rgba(22, 22, 22, 0.1);
+}
+
+/* --- Media Queries para Dispositivos Menores (Mobile e Tablet) --- */
+
+/* Para telas até 768px  */
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .heaerd-resumo {
+        align-items: center;
+        min-height: auto;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .header-resumo h1,
+    .header-resumo p,
+    .header-contateme {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 0;
+    }
+
+    .header-resumo h1 {
+        font-size: 22px;
+    }
+
+    .header-contateme {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .header img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Para telas muito pequenas (smartphones em retrato) */
+@media (max-width: 480px) {
+    .header {
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+
+    .heaerd-resumo {
+        gap: 10px;
+    }
+
+    .header-resumo h1 {
+        font-size: 20px;
+    }
+
+    .header-resumo p {
+        font-size: 14px;
+    }
+
+    .header-contateme {
+        gap: 8px;
+    }
+
+    .header img {
+        max-width: 150px;
+    }
+}
+
+/* Para Celulares em paisagem (Landscape) - Opcional */
+@media (max-width: 767px) and (orientation: landscape) {
+    .header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .heaerd-resumo {
+        min-height: auto;
+        width: auto;
+        flex-grow: 1;
+    }
+    .header img {
+        max-width: 180px;
+    }
+    .header-contateme {
+        flex-direction: row; 
+    }
 }
